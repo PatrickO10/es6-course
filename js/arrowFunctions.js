@@ -33,3 +33,16 @@ const fullNames5 = names.map(() => `cool bos`);
 const sayMyName = (name) => { alert(`Hello ${name}!`)};
 
 sayMyName('pat');
+
+/* Example */
+const race = '100m dash';
+const winners = ['Hunter Gath', 'Singa Song', 'Imda Bos'];
+
+// Implicit return with an object literal
+const win = winners.map((winner, i) => ({name: winner, race, place: i + 1}))
+
+/* Example */
+const ages = [23,62,45,234,2,62,234,62,34];
+
+const old = ages.filter(age => age >= 60);
+console.log(old);
